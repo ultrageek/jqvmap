@@ -355,6 +355,22 @@ This is the Region that you are looking to have preselected (two letter ISO code
 	WI = Wisconsin
 	WV = West Virginia
 	WY = Wyoming
+	
+	CANADA
+	------------------------------
+	AB = Alberta
+	BC = British Columbia
+	MB = Manitoba
+	NB = New Brunswick
+	NL = Newfoundland
+	NS = Nova Scotia
+	NT = Northwest Territories
+	NU = Nunavut
+	ON = Ontario
+	PE = Prince Edward Island
+	QC = Quebec
+	SK = Saskatchewan
+	YT = Yukon
  
 	EUROPE
 	------------------------------
@@ -627,7 +643,7 @@ Consider that fact that you can use standard features of jQuery events like even
 Data Visualization
 ======
 
-Here I want to demonstrate how visualization of some geographical-related data can be done using JQVMap. Let's visualize information about GDP in 2010 for every country. At first we need some data. Let it be site of International Monetary Fond. There we can get information in xsl format, which can be converted first to csv and then to json with any scripting language. Now we have file gdp-data.js with such content (globals are evil, I know, but just for the sake of simplification):
+Here I want to demonstrate how visualization of some geographical-related data can be done using JQVMap. Let's visualize information about GDP in 2010 for every country. At first we need some data. Let it be site of International Monetary Fund. There we can get information in xsl format, which can be converted first to csv and then to json with any scripting language. Now we have file gdp-data.js with such content (globals are evil, I know, but just for the sake of simplification):
 
 	var sample_data = {"af":16.63,"al":11.58,"dz":158.97,...};
 
@@ -688,7 +704,7 @@ Then connect it to the page and add some code to make visualization:
 Custom Maps
 ======
 
-The following is the converter instructions directly from [jVectorMap](https://github.com/bjornd/jvectormap) that could be used to create your own maps for JQVMap from the data in various GIS formats like Shapefile. The following command could be used to convert USA map from the data available at [www.naturalearthdata.com](www.naturalearthdata.com):
+The following is the converter instructions directly from [jVectorMap](https://github.com/bjornd/jvectormap) that could be used to create your own maps for JQVMap from the data in various GIS formats like Shapefile. The following command could be used to convert USA map from the data available at [www.naturalearthdata.com](http://www.naturalearthdata.com):
 
 	python \
 	  path/to/converter.py \
